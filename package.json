@@ -1,20 +1,17 @@
 {
   "name": "grandgame2",
-  "private": true,
-  "version": "0.1.0",
+  "version": "3.0.0",
+  "description": "GRAND CITY 2 — GTA2-style неоновый открытый мир в браузере. Чистый JavaScript + Three.js, ноль внешних ассетов.",
   "type": "module",
-  "description": "GRANDGAME2 — top-down экшен-драйвинг в духе GTA 2: ночной неоновый мегаполис, Vite + TypeScript + Three.js, без внешних ассетов",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "three": "^0.170.0"
+    "three": "^0.165.0"
   },
   "devDependencies": {
-    "@types/three": "^0.170.0",
-    "typescript": "~5.6.3",
-    "vite": "^5.4.11"
+    "vite": "^5.4.0"
   }
 }

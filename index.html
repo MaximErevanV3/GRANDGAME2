@@ -1,41 +1,25 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GRANDGAME2 — Neon City</title>
-  <link rel="stylesheet" href="/src/style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="GRAND CITY 2 — неоновый ретрофутуристичный открытый мир в браузере. Чистый JavaScript + Three.js, всё генерируется кодом." />
+  <title>GRAND CITY 2 — неоновый открытый мир</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./src/ui/styles.css" />
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"
+    }
+  }
+  </script>
 </head>
 <body>
-  <canvas id="game"></canvas>
-
-  <div id="hud">
-    <div id="vignette"></div>
-
-    <div id="topbar">
-      <canvas id="speedo" width="280" height="160"></canvas>
-      <div id="stats">
-        <div class="statrow"><span class="label">ПОВРЕЖДЕНИЯ</span><div id="damagebar"><div id="damagefill"></div></div></div>
-        <div class="statrow"><span class="label">ДРИФТ</span><span id="driftval">0.0</span></div>
-        <div class="statrow"><span class="label">ФАРЫ</span><span id="lightsval">ВКЛ</span></div>
-      </div>
-    </div>
-
-    <canvas id="minimap" width="176" height="176"></canvas>
-
-    <div id="help">
-      <div class="help-title">GRANDGAME2</div>
-      <div class="help-row"><b>WASD / стрелки</b> движение</div>
-      <div class="help-row"><b>SPACE</b> ручник — дрифт</div>
-      <div class="help-row"><b>L</b> фары</div>
-      <div class="help-row"><b>H</b> скрыть подсказку</div>
-      <div class="help-row help-dim">F (выход из машины) и ЛКМ (стрельба) будут включены в Шаге 2</div>
-    </div>
-
-    <div id="toast"></div>
-    <div id="fps"></div>
-  </div>
-
-  <script type="module" src="/src/main.ts"></script>
+  <div id="app"></div>
+  <div id="ui-root"></div>
+  <div id="err-root"></div>
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>
