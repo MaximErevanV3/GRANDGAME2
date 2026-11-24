@@ -1,0 +1,20 @@
+{
+  "name": "grandgame2",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "GRANDGAME2 — top-down экшен-драйвинг в духе GTA 2: ночной неоновый мегаполис, Vite + TypeScript + Three.js, без внешних ассетов",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.170.0",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.11"
+  }
+}
